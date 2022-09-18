@@ -1,35 +1,6 @@
 #include <iostream>
 
 using namespace std;
-
-// int maxsfunction(int l, int r, int a[])
-// {
-//     int max = a[l];
-//     for (int i = l + 1; i <= r; i++)
-//     {
-//         if (a[i] > max)
-//         {
-//             max = a[i];
-//         }
-            
-//     }
-//     return max;
-// }
-
-// int minsfunction(int l, int r, int a[])
-// {
-//     int min = a[l];
-//     for (int i = l + 1; i <= r; i++)
-//     {
-//         if (a[i] < min)
-//         {
-//             min = a[i];
-//         }
-            
-//     }
-//     return min;
-// }
-
 int minsfunction(int n,int a[],int maxindex,int minindex)
 {
     int min ;
@@ -50,7 +21,6 @@ int minsfunction(int n,int a[],int maxindex,int minindex)
 
 int maxsfunction(int n,int a[],int maxindex,int minindex)
 {
-    // int max=a[0];
     int max;
     int k=1;
     if(maxindex==0)
@@ -79,37 +49,6 @@ int maxsfunction(int n,int a[],int maxindex,int minindex)
     }
     return max;
 }
-// int maxmfunction(int n, int a[], int l, int r)
-// {
-//     int max = a[0];
-//     for (int i = 1; i < l; i++)
-//     {
-//         if (a[i] > max)
-//             max = a[i];
-//     }
-//     for (int i = r + 1; i < n; i++)
-//     {
-//         if (a[i] > max)
-//             max = a[i];
-//     }
-//     return max;
-// }
-
-// int minmfunction(int n, int a[], int l, int r)
-// {
-//     int min = a[0];
-//     for (int i = 1; i < l; i++)
-//     {
-//         if (a[i] < min)
-//             min = a[i];
-//     }
-//     for (int i = r + 1; i < n; i++)
-//     {
-//         if (a[i] < min)
-//             min = a[i];
-//     }
-//     return min;
-// }
 
 int maxmfunction(int n, int a[])
 {
