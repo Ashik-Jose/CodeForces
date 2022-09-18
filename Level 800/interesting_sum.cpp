@@ -93,52 +93,12 @@ int main()
         int a[n];
         for (k = 0; k < n; k++)
             cin >> a[k];
-        // for (l = 1; l < n - 1; l++)
-        // {
-        //     for (r = l + 1; r < n; r++)
-        //     {
-        //         if (r - l + 1 < n - 1)
-        //         {
-        //             // maxm = maxmfunction(n,a,l,r);
-        //             // minm = minmfunction(n,a,l,r);
-        //             maxs=maxsfunction(l,r,a);
-        //             mins = minsfunction(l,r,a);
-        //             pbeauty = (maxs - mins);
-        //             if (pbeauty > beauty)
-        //             {
-        //                 beauty = pbeauty;
-        //                 lmax=l;
-        //                 rmax=r;
-        //             }
-                        
-        //         }
-        //     }
-        // }
-        // maxm=maxmfunction(n,a,lmax,rmax);
-        // minm = minmfunction(n,a,lmax,rmax);
-        // beauty = beauty + (maxm-minm);
         maxm = maxmfunction(n,a);
         minm = minmfunction(n,a);
         maxs = maxsfunction(n,a,maxm,minm);
         mins = minsfunction(n,a,maxm,minm);
-        // cout<<maxm<<" ";
-        // cout<<minm<<"\n";
-        // if(maxm<minm)
-        // {
-        //     maxs = maxsfunction(maxm+1,minm-1,a);
-        //     mins = minsfunction(maxm+1,minm-1,a);
-        // }
-        // else
-        // {
-        //     maxs = maxsfunction(minm+1,maxm-1,a);
-        //     mins = minsfunction(minm+1,maxm-1,a);
-        // }
-        // mins = minsfunction(1,n-2,a);
-        // maxs = maxsfunction(1,n-2,a);
         beauty = (a[maxm]-a[minm]) + (maxs - mins);
         B[i] = beauty;
-        // pbeauty = 0;
-        // beauty = 0;
     }
     for (int i = 0; i < t; i++)
         cout << B[i] << "\n";
